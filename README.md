@@ -14,7 +14,7 @@ Initial motivations for developing Hydrus were to address the largest usability 
 
 During development, a number of other issues with CMS's SAS Pack were discovered:
 
-1.  CMS's SAS Pack does not correctly implement k-means clustering when assigning
+-   CMS's SAS Pack does not correctly implement k-means clustering when assigning
     star ratings to hospitals. This led to incorrect star rating assignments for
     over 900 hospitals in the October 2016 release, and over 1000 hospitals in the
     December 2016 release.
@@ -23,7 +23,7 @@ During development, a number of other issues with CMS's SAS Pack were discovered
 
     Optionally, Hydrus can instead mimic the SAS Pack's errors to replicate its results.
 
-2.  When fitting CMS's Latent Variable Model (LVM) to the hospital data, a very
+-   When fitting CMS's Latent Variable Model (LVM) to the hospital data, a very
     large number of complicated integrals are calculated.  CMS's SAS Pack uses
     [Gaussian quadrature][5] to approximate these integrals.  These
     approximations lead to inaccurate estimates of the model parameters, which
@@ -98,19 +98,19 @@ Yes, but it requires some work.
 We plan to add a guide for this in the future.
 
 ## Similar Projects
-@huangrh maintains a separate repository similar to Hydrus in its goals.
+[@huangrh](https://github.com/huangrh/) maintains a separate repository similar to Hydrus in its goals.
 
 (TODO: link here when it is added to GitHub)
 
 ## Authors
-All code was written by @mark-r-g and/or @bbayles, who also maintain this repository.
+All code was written by [@mark-r-g](https://github.com/mark-r-g/) and/or [@bbayles](https://github.com/bbayles/), who also maintain this repository.
 
-Significant non-code contributions were made by @huangrh.
+Significant non-code contributions were made by [@huangrh](https://github.com/huangrh/).
 
 The Hydrus logo was donated by a separate party.
 
 ## Contact
-If you have questions, please contact @mark-r-g via the email listed in his GitHub profile.
+If you have questions, please contact [@mark-r-g](https://github.com/mark-r-g/) via the email listed in his GitHub profile.
 
 (TODO: add a contact point for @bbayles if he wishes)
 
