@@ -1,0 +1,139 @@
+GROUP_WEIGHTS:
+    - [mortality, 0.22]
+    - [safety, 0.22]
+    - [read, 0.22]
+    - [patientexp, 0.22]
+    - [efficiency, 0.04]
+    - [timeliness, 0.04]
+    - [effectiveness, 0.04]
+
+PATIENTEXP_DENOM_COLS:
+    - H_CLEAN_HSP_LINEAR_DEN
+    - H_COMP_1_LINEAR_DEN
+    - H_COMP_2_LINEAR_DEN
+    - H_COMP_3_LINEAR_DEN
+    - H_COMP_4_LINEAR_DEN
+    - H_COMP_5_LINEAR_DEN
+    - H_COMP_6_LINEAR_DEN
+    - H_COMP_7_LINEAR_DEN
+    - H_HSP_RATING_LINEAR_DEN
+    - H_QUIET_HSP_LINEAR_DEN
+    - H_RECMND_LINEAR_DEN
+
+GROUPS:
+    - mortality
+    - safety
+    - read
+    - patientexp
+    - efficiency
+    - timeliness
+    - effectiveness
+
+MEAS_GROUPS:
+    mortality:
+        - MORT_30_AMI
+        - MORT_30_CABG
+        - MORT_30_COPD
+        - MORT_30_HF
+        - MORT_30_PN
+        - MORT_30_STK
+        - PSI_4_SURG_COMP
+    safety:
+        - COMP_HIP_KNEE
+        - HAI_1
+        - HAI_2
+        - HAI_3
+        - HAI_4
+        - HAI_5
+        - HAI_6
+        - PSI_90_SAFETY
+    read:
+        - READM_30_AMI
+        - READM_30_CABG
+        - READM_30_COPD
+        - READM_30_HF
+        - READM_30_HIP_KNEE
+        - READM_30_HOSP_WIDE
+        - READM_30_PN
+        - READM_30_STK
+    patientexp:
+        - H_COMP_1_LINEAR
+        - H_COMP_2_LINEAR
+        - H_COMP_3_LINEAR
+        - H_COMP_4_LINEAR
+        - H_COMP_5_LINEAR
+        - H_COMP_6_LINEAR
+        - H_COMP_7_LINEAR
+        - H_CLEAN_HSP_LINEAR
+        - H_QUIET_HSP_LINEAR
+        - H_HSP_RATING_LINEAR
+        - H_RECMND_LINEAR
+    efficiency:
+        - OP_8
+        - OP_10
+        - OP_11
+        - OP_13
+        - OP_14
+    timeliness:
+        - ED_1B
+        - ED_2B
+        - OP_1
+        - OP_2
+        - OP_3B
+        - OP_5
+        - OP_18B
+        - OP_20
+        - OP_21
+    effectiveness:
+        - IMM_2
+        - IMM_3_OP_27
+        - OP_4
+        - OP_22
+        - OP_23
+        - OP_29
+        - OP_30
+        - PC_01
+        - STK_4
+        - VTE_5
+        - VTE_6
+
+FLIPPED_MEASURES:
+    - COMP_HIP_KNEE
+    - ED_1B
+    - ED_2B
+    - HAI_1
+    - HAI_2
+    - HAI_3
+    - HAI_4
+    - HAI_5
+    - HAI_6
+    - MORT_30_AMI
+    - MORT_30_CABG
+    - MORT_30_COPD
+    - MORT_30_HF
+    - MORT_30_PN
+    - MORT_30_STK
+    - OP_10
+    - OP_11
+    - OP_13
+    - OP_14
+    - OP_18B
+    - OP_20
+    - OP_21
+    - OP_22
+    - OP_3B
+    - OP_5
+    - OP_8
+    - PC_01
+    - PSI_4_SURG_COMP
+    - PSI_90_SAFETY
+    - READM_30_AMI
+    - READM_30_CABG
+    - READM_30_COPD
+    - READM_30_HF
+    - READM_30_HIP_KNEE
+    - READM_30_HOSP_WIDE
+    - READM_30_PN
+    - READM_30_STK
+    - VTE_6
+

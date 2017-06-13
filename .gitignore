@@ -1,0 +1,10 @@
+*__pycache__*
+*.pyc
+*.sas7bdat
+
+.cache/
+.hypothesis/
+
+output/*
+
+extra*
