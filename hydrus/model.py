@@ -122,7 +122,7 @@ class Lvm:
 
         return logsumexp(np.nan_to_num(combined), b=QC2, axis=1)  # (nhosp)
 
-    def ests_ll_exact(self, params):
+    def _ests_ll_exact(self, params):
         """
         Calculate the loglikelihood given model parameters `params`.
 
@@ -142,7 +142,7 @@ class Lvm:
 
         return np.log(2*np.pi/a)/2 + b**2/a/2 - LOG2PI/2 - h - c
 
-    def _ests_ll_exact(self, params):
+    def ests_ll_exact(self, params):
         """
         Calculate the loglikelihood given model parameters `params`.
 
