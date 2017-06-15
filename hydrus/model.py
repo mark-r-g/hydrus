@@ -122,26 +122,6 @@ class Lvm:
 
         return logsumexp(np.nan_to_num(combined), b=QC2, axis=1)  # (nhosp)
 
-    def _ests_ll_exact(self, params):
-        """
-        Calculate the loglikelihood given model parameters `params`.
-
-        This method uses an exact integral and returns exact ll values, i.e.
-        it does not use quadrature to approximate the integral.
-        """
-        mu, gamma, err = np.split(params, 3)
-        err, err2, gamma2 = abs(err), err ** 2, gamma ** 2
-        num_mu = self.z - mu
-
-        # Many thanks to github.com/huangrh for figuring this part out.  All I
-        # did was convert his solution to code.
-        h = nsum_row(self.w * (LOG2PI + 2 * np.log(err)) / 2)
-        a = nsum_row(self.w * gamma2 / err2) + 1
-        b = nsum_row(self.w / err2 * num_mu * gamma)
-        c = nsum_row(self.w / err2 * num_mu**2 / 2)
-
-        return np.log(2*np.pi/a)/2 + b**2/a/2 - LOG2PI/2 - h - c
-
     def ests_ll_exact(self, params):
         """
         Calculate the loglikelihood given model parameters `params`.
