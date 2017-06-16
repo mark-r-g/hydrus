@@ -78,7 +78,7 @@ that can only be addressed by CMS.
 ### How can I configure Hydrus to reproduce the results released by CMS?
 Open the `settings.cfg` file and change both `RAPIDCLUS` and `QUADRATURE` from `False` to `True`.
 This tells Hydrus to use the same clustering and quadrature methods used in CMS's SAS Pack.
-Run Hydrus with these changes and the resulting star ratings will be identical to those form SAS.
+Run Hydrus with these changes and the resulting star ratings will be identical to those from SAS.
 
 Note that quadrature-based integral approximation is not only less accurate, but also much slower.
 Expect a single run to take 5 to 15 minutes instead of less than 1 minute.
