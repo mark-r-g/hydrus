@@ -23,10 +23,9 @@ During development, a number of other issues with CMS's SAS Pack were discovered
     Optionally, Hydrus can instead mimic the SAS Pack's errors to replicate its results.
 
 -   When fitting CMS's Latent Variable Model (LVM) to the hospital data, a large number of
-    complicated integrals are calculated.  CMS's SAS Pack uses
-    [Gaussian quadrature](https://en.wikipedia.org/wiki/Gaussian_quadrature) to approximate these
-    integrals.  These approximations lead to inaccurate estimates of the model parameters, which
-    in turn leads to hundreds of hospitals receiving an incorrect star rating.
+    complicated integrals are calculated.  CMS's SAS Pack uses [Gaussian quadrature][4] to
+    approximate these integrals.  These approximations lead to inaccurate estimates of the model
+    parameters, which in turn leads to hundreds of hospitals receiving an incorrect star rating.
 
     The default behavior of Hydrus is to fix this issue by avoiding quadrature altogether, instead
     calculating exact integrals.
@@ -76,7 +75,7 @@ that can only be addressed by CMS.
     ```
 
 ## FAQ
-### How can I configure Hydrus to reproduce the October/December results released by CMS?
+### How can I configure Hydrus to reproduce the results released by CMS?
 Open the `settings.cfg` file and change both `RAPIDCLUS` and `QUADRATURE` from `False` to `True`.
 This tells Hydrus to use the same clustering and quadrature methods used in CMS's SAS Pack.
 Run Hydrus with these changes and the resulting star ratings will be identical to those form SAS.
@@ -89,37 +88,39 @@ Yes, by editing e.g. `input/measure_settings_2016_12.yml`.
 
 We plan to add a guide for this in the future.
 
-### Can I change which hospitals are included, or edit a given hospital's data before running Hydrus?
+### Can I change which hospitals are included, or edit the hospital data before running Hydrus?
 Yes, but it requires some work.
 
 We plan to add a guide for this in the future.
 
 ## Similar Projects
-[@huangrh](https://github.com/huangrh/) maintains
-[a separate repository](https://github.com/huangrh/rstarating) similar to Hydrus in its goals.
+[@huangrh][5] maintains [a separate repository][6] similar to Hydrus in its goals.
 
 ## Authors
-Code was written by [@mark-r-g](https://github.com/mark-r-g/) and/or [@bbayles](https://github.com/bbayles/).
+Code was written by [@mark-r-g][7] and [@bbayles][8].
 
-Significant non-code contributions were made by [@huangrh](https://github.com/huangrh/).
+Significant non-code contributions were made by [@huangrh][5] and Angelo Bufalino, PhD.
 
 The Hydrus logo was donated by a separate party.
 
 ## Contact
-If you have questions, please contact [@mark-r-g](https://github.com/mark-r-g/) via the email
-address listed at the top of
-[Hydrus' license header](https://github.com/mark-r-g/hydrus/blob/master/hydrus/__main__.py#L1).
-
-(TODO: add a contact point for @bbayles if he wishes)
+If you have questions, please contact [@mark-r-g][7] via the email address listed at the top of
+[Hydrus' license header][9].
 
 (TODO: open up the issue tracker and/or wiki?)
 
 ## License
 Hydrus has been uploaded to GitHub subject to the GNU General Public License (GPL) Version 3.
 
-See the `LICENSE` file for information on the terms and conditions for usage, and a disclaimer of all warranties.
+See the `LICENSE` file for information on the terms and conditions for usage, and a disclaimer of
+all warranties.
 
 [1]: https://www.qualitynet.org/dcs/ContentServer?c=Page&pagename=QnetPublic%2FPage%2FQnetTier3&cid=1228775958130
 [2]: https://www.cms.gov/Newsroom/MediaReleaseDatabase/Fact-sheets/2016-Fact-sheets-items/2016-07-27.html
 [3]: https://www.qualitynet.org/dcs/BlobServer?blobkey=id&blobnocache=true&blobwhere=1228890620609&blobheader=multipart%2Foctet-stream&blobheadername1=Content-Disposition&blobheadervalue1=attachment%3Bfilename%3DStarRtngSASPackInstrns_Oct2016.pdf&blobcol=urldata&blobtable=MungoBlobs
-[4]: https://www.cms.gov/Newsroom/MediaReleaseDatabase/Fact-sheets/2016-Fact-sheets-items/2016-07-21-2.html
+[4]: https://en.wikipedia.org/wiki/Gaussian_quadrature
+[5]: https://github.com/huangrh/
+[6]: https://github.com/huangrh/rstarating
+[7]: https://github.com/mark-r-g/
+[8]: https://github.com/bbayles/
+[9]: https://github.com/mark-r-g/hydrus/blob/master/hydrus/__main__.py#L1
