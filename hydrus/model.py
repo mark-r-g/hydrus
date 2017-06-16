@@ -129,8 +129,6 @@ class Lvm:
         This method uses an exact integral and returns exact ll values, i.e.
         it does not use quadrature to approximate the integral.
         """
-        # Many thanks to github.com/huangrh for figuring this part out.  All I
-        # did was convert his solution to code.
         mu, gamma, err = np.split(params, 3)
         d = self.num2 - mu
         q = self.w2 / err**2

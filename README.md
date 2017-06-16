@@ -93,16 +93,6 @@ Yes, but it requires some work.
 
 We plan to add a guide for this in the future.
 
-## Similar Projects
-[@huangrh][5] maintains [a separate repository][6] similar to Hydrus in its goals.
-
-## Authors
-Code was written by [@mark-r-g][7] and [@bbayles][8].
-
-Significant non-code contributions were made by [@huangrh][5] and Angelo Bufalino, PhD.
-
-The Hydrus logo was donated by a separate party.
-
 ## Contact
 If you have questions, please contact [@mark-r-g][7] via the email address listed at the top of
 [Hydrus' license header][9].
@@ -119,8 +109,5 @@ all warranties.
 [2]: https://www.cms.gov/Newsroom/MediaReleaseDatabase/Fact-sheets/2016-Fact-sheets-items/2016-07-27.html
 [3]: https://www.qualitynet.org/dcs/BlobServer?blobkey=id&blobnocache=true&blobwhere=1228890620609&blobheader=multipart%2Foctet-stream&blobheadername1=Content-Disposition&blobheadervalue1=attachment%3Bfilename%3DStarRtngSASPackInstrns_Oct2016.pdf&blobcol=urldata&blobtable=MungoBlobs
 [4]: https://en.wikipedia.org/wiki/Gaussian_quadrature
-[5]: https://github.com/huangrh/
-[6]: https://github.com/huangrh/rstarating
 [7]: https://github.com/mark-r-g/
-[8]: https://github.com/bbayles/
 [9]: https://github.com/mark-r-g/hydrus/blob/master/hydrus/__main__.py#L1
