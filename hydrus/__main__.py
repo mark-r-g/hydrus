@@ -73,7 +73,7 @@ def cluster_kmeans(scores, cfg=None):
     """Calculate star ratings via k-means."""
     if cfg is None:
         cfg = constants
-    kmeans = KMeans(n_clusters=5, tol=1e-6, n_init=500)
+    kmeans = KMeans(n_clusters=5, tol=1e-10, n_init=50)
     kfit = kmeans.fit(vstack(scores))
     centers = [x[0] for x in kfit.cluster_centers_]
     names = dict(zip(sorted(centers), cfg.CLUSTER_NAMES))
