@@ -1,0 +1,29 @@
+name: Hydrus
+version: 1.0.0
+
+channels:
+  - http://repo.continuum.io/pkgs/free/
+  # - http://repo.continuum.io/pkgs/msys2/
+specs:
+  - python
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - pyyaml
+  - numba
+  - pip
+
+license_file: LICENSE
+
+# 164x314
+# welcome_image: logo_large.png             [win]
+
+# 150x57
+# header_image: logo.png              [win]
+
+# 256x256
+# icon_image: icon.png                [win]
+
+# post_install: hydrus_post_install.bat
+

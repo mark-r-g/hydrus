@@ -11,5 +11,6 @@ dependencies:
 - pytest=3.0.5
 - numba=0.31.0
 - pip=9.0.1
+- constructor=1.5.5
 - pip:
   - hypothesis==3.6.1
