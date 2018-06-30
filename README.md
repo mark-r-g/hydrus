@@ -86,18 +86,8 @@ Expect a single run to take 5 to 15 minutes instead of less than 1 minute.
 ### Can I change which measures/groups are included?
 Yes, by editing e.g. `input/measure_settings_2016_12.yml`.
 
-We plan to add a guide for this in the future.
-
-### Can I change which hospitals are included, or edit the hospital data before running Hydrus?
-Yes, but it requires some work.
-
-We plan to add a guide for this in the future.
-
-## Contact
-If you have questions, please contact [@mark-r-g][7] via the email address listed at the top of
-[Hydrus' license header][9].
-
-(TODO: open up the issue tracker and/or wiki?)
+## __2018 Update__
+See [rstarating][10] (written in R) for an up-to-date implementation.
 
 ## License
 Hydrus has been uploaded to GitHub subject to the GNU General Public License (GPL) Version 3.
@@ -111,3 +101,4 @@ all warranties.
 [4]: https://en.wikipedia.org/wiki/Gaussian_quadrature
 [7]: https://github.com/mark-r-g/
 [9]: https://github.com/mark-r-g/hydrus/blob/master/hydrus/__main__.py#L1
+[10]: https://github.com/huangrh/rstarating
